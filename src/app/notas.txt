@@ -1,0 +1,34 @@
+Componente: Imagina que estás construyendo una casa de juguete. Cada habitación de la casa es como un componente. Cada habitación tiene su propio propósito: la cocina es para cocinar, el dormitorio es para dormir, y así sucesivamente. En Angular, un componente es una parte de la aplicación que se encarga de mostrar algo en la pantalla y de manejar la interacción con el usuario. Así que, como en tu casa de juguete, cada componente tiene su propia función y aspecto.
+
+Módulo: Ahora, piensa en la casa completa. La casa está formada por varias habitaciones (componentes), pero también tiene un jardín, un garaje y tal vez un sótano. Todo eso junto forma un módulo. En Angular, un módulo es como una gran caja que agrupa varios componentes y servicios que trabajan juntos. Así, cuando necesitas hacer algo grande, como construir una casa, puedes organizar todo en módulos para que sea más fácil de manejar.
+
+Servicio: Por último, imagina que tienes un amigo que siempre te ayuda a buscar cosas o a resolver problemas. Ese amigo es como un servicio. En Angular, un servicio es una parte de la aplicación que se encarga de hacer tareas específicas, como obtener información de internet o guardar datos. Los componentes pueden pedir ayuda a los servicios, así como tú le pides ayuda a tu amigo cuando lo necesitas.
+
+Así que, en resumen: los componentes son como habitaciones, los módulos son como la casa completa, y los servicios son como amigos que te ayudan a hacer cosas. ¡Espero que esto te ayude a entenderlo mejor!
+
+@ViewChild te permite "decirle" a tu componente que quieres usar un elemento o componente específico que está dentro de su propia plantilla, sin que necesariamente haya una relación de padre e hijo. ¡Muy bien captado! Si tienes más preguntas, aquí estoy para ayudarte.
+
+
+magina que estás construyendo una casa de muñecas. Cada habitación de la casa puede tener diferentes muebles y decoraciones. Ahora, piensa en que cada habitación es como un componente en Angular.
+
+Cuando usas @Input, es como si le dijeras a una habitación que puede recibir muebles de otras partes de la casa. Por ejemplo, si tienes una habitación que es un dormitorio, puedes usar @Input para decirle que le traigan una cama, una lámpara y una mesita de noche desde otra parte de la casa.
+
+Así que, en resumen, @Input en Angular permite que un componente (o habitación) reciba información o datos (como los muebles) de otro componente. Esto ayuda a que cada parte de tu aplicación (o casa) sepa qué necesita y cómo debe verse. ¡Es una forma de compartir cosas entre diferentes partes de tu aplicación!
+
+
+Sigamos con la analogía de la casa de muñecas para entender la diferencia entre @Input y @ViewChild.
+
+Imagina que tienes una habitación (un componente) en tu casa de muñecas que tiene una ventana (otro componente) y quieres que esa ventana tenga una cortina.
+
+@Input: Es como si le dijeras a la habitación que puede recibir una cortina de otra parte de la casa. La habitación no sabe de antemano qué cortina va a recibir, pero está lista para recibirla. Así, puedes cambiar la cortina según lo que necesites en cada momento.
+
+@ViewChild: Ahora, imagina que quieres hacer algo especial con la ventana, como abrirla o cerrarla. Para hacer esto, necesitas tener acceso directo a la ventana desde la habitación. Aquí es donde entra @ViewChild. Con @ViewChild, le estás diciendo a la habitación que quiere tener una conexión directa con la ventana, para poder interactuar con ella, como abrirla o cerrarla, o cambiar su color.
+
+En resumen:
+
+@Input se usa para recibir datos o propiedades de otros componentes.
+@ViewChild se usa para acceder a un componente hijo directamente y poder interactuar con él.
+
+@Input: Lo usas cuando quieres que un componente reciba datos o propiedades de otro componente, pero no necesariamente sabes de antemano qué datos específicos va a recibir. Es como decir: "Estoy listo para recibir algo, pero no sé exactamente qué será". Esto permite que el componente sea más flexible y reutilizable.
+
+@ViewChild: Lo usas cuando necesitas interactuar directamente con un componente hijo específico. Es como decir: "Quiero hablar con esta ventana en particular y hacer algo con ella, como abrirla o cerrarla". Esto te permite acceder a métodos y propiedades del componente hijo para manipularlo directamente.
